@@ -1,9 +1,11 @@
 /*
 Color palette: https://coolors.co/1c0b19-140d4f-4ea699-2dd881-6fedb7
+
+Font family: Quicksand (body), Secular One (headings), Barlow Condensed (header/footer)
 */
 
 * {
-    font-family: 'Oswald', Helvetica, sans-serif;
+    font-family: 'Quicksand', Helvetica, sans-serif;
 }
 
 .background {
@@ -29,29 +31,38 @@ header {
 
 header ul {
     margin: 30px auto;
-    padding: 0 20px;
+    padding: 0px 20px;
     text-align: center;
 }
 
 header li {
-    color: #FFF;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    text-transform: uppercase;
     display: inline-block;
     width: 150px;
 }
 
+header a {
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 h2 {
     color: #4EA699;
+    font-family: 'Secular One', Helvetica, sans-serif;
     font-size: 30px;
+    letter-spacing: 2px;
     left: 100px;
 }
 
 h3 {
     color: #140D4F;
+    font-family: 'Secular One', Helvetica, sans-serif;
     font-size: 24px;
+    letter-spacing: 2px;
     left: 100px;
 }
 
@@ -93,24 +104,29 @@ a:hover {
 
 .name {
     box-sizing: border-box;
-    text-align: center;
     padding: 350px 150px;
     width: 100%;
-    position: relative;
-    top: 70px;
     z-index: 2;
 }
 
 .name h1 {
     color: #FFF;
+    font-family: 'Secular One', Helvetica, sans-serif;
     font-size: 72px;
     text-align: center;
+    letter-spacing: 2px;
+    position: relative;
+    top: 50px;
 }
 
 .name h3 {
     color: #FFF;
     font-size: 24px;
     text-align: center;
+    letter-spacing: 2px;
+    position: relative;
+    top: 15px;
+    left: 0px;
 }
 
 
@@ -162,7 +178,7 @@ a:hover {
 
 .careerprofile li {
     color: #FFF;
-    font-family: sans-serif;
+    font-family: 'Quicksand', Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 300;
     display: inline-block;
@@ -279,20 +295,13 @@ footer {
     z-index: 10;
 }
 
-footer p {
-    color: #FFF;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-align: center;
-}
-
+footer p,
 footer a {
     color: #FFF;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: 300;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
 }
