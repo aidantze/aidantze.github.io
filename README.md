@@ -4,7 +4,7 @@ This project is a website that showcases my portfolio. It is designed to be a mo
 
 The first attempt of this website was used using raw HTML/CSS while I was first attempting frontend programming in 2022/23. After some time, I was motivated again in 2025 revamp the entire website using React.js, tailwind.css and next.js. However, after much headaches trying to get the page to even render, I scrapped next.js and just relied on the create-react-app scripts and react-router-dom to render pages and manage routing. Some other challenges faced involved managing routes, element containers, additional hooks to manage parallax scrolling, and doing all of this with my now-improved React knowledge whilst still being from scratch.
 
-Access the frontend at: _TBA_
+[Access the deployed frontend here](https://aidantze.netlify.app/)
 
 *(Deployed using Netlify)*
 
