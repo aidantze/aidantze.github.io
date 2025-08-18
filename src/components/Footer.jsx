@@ -46,7 +46,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr className="border-subtle-gray my-6" />
-                <p className="text-center text-sm">Last updated: 14 August 2025</p>
+                <p className="text-center text-sm">Last updated: 18 August 2025</p>
             </div>
         </footer>
     );
