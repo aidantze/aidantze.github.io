@@ -21,7 +21,7 @@ const NotFoundPage = () => {
                         The page you are trying to find doesn't seem to exist, or may have been removed. You could try again, or head back to the Home page.
                     </p>
                     <Link to="/">
-                        <button className="bg-accent-green hover:bg-opacity-80 transition-colors duration-300 text-primary-bg font-inter font-semibold py-3 px-8 rounded-md" alt="Button to navigate back to the home page">
+                        <button className="bg-accent-green hover:bg-opacity-80 transition-colors duration-300 text-primary-bg font-inter font-semibold py-3 px-8 rounded-full" alt="Button to navigate back to the home page">
                             Back to Safety
                         </button>
                     </Link>

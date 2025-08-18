@@ -30,7 +30,7 @@ const Footer = () => {
                     {/* Social Links & Slogan */ }
                     <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
                         <div className="flex items-center space-x-4">
-                            <a href="#" className="hover:opacity-80 transition-opacity duration-300" aria-label="Download my resume">
+                            <a href="/downloadresume" className="hover:opacity-80 transition-opacity duration-300" aria-label="Download my resume">
                                 <FaAddressBook className="h-6 w-6 fill-current text-subtle-gray hover:text-primary-text" />
                             </a>
                             <a href="https://github.com/aidantze/projects.github.io" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity duration-300" aria-label="My GitHub profile">
