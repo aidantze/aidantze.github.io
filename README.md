@@ -1,4 +1,4 @@
-# aidantze.github.io — My Portfolio Website
+# My Portfolio Website
 
 This project is a website that showcases my portfolio. It is designed to be a more visually pleasing alternative to my formal resume, featuring all my relevant skills, projects, work and volunteer experiences and hobbies, to assist in my applications for future roles. 
 
