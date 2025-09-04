@@ -89,12 +89,9 @@ const WorkPage = () => {
             {/* Main content with gradient background for work subsections */ }
             <div className="py-16" style={ { background: 'linear-gradient(to bottom, #171825, #1b2933)' } }>
                 <div className="container mx-auto px-8">
-                    {/* PT MTM Jakarta Subsection */ }
+                    {/* PT MTM Jakarta Subsection: Image Left on large, Image Below on small */ }
                     <section ref={ ptmtmRef } className={ `${ getClasses(ptmtmInView) } mb-24 flex flex-col md:flex-row items-center gap-12` }>
-                        <div className="md:w-1/2 order-2 md:order-1 px-4">
-                            <img src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756982186/mtm_kmgskl.png" alt="PT MTM logo" className="w-4/5 mx-auto rounded-lg" />
-                        </div>
-                        <div className="md:w-1/2 order-1 md:order-2 px-4">
+                        <div className="md:w-1/2 md:order-2 px-4">
                             <h3 className="text-2xl font-montserrat font-bold text-accent-blue mb-4">PT. MTM, Jakarta, Indonesia</h3>
                             <h4 className="text-xl font-montserrat font-bold text-accent-green mb-4">Cybersecurity Marketing Consultant</h4>
                             <p className="text-lg font-inter text-primary-text mb-6">I was involved in a 3-member consulting team working at PT. MTM, a cybersecurity firm in Jakarta. The project involved developing a marketing proposal to increase their existing B2B customer base whilst venturing into new B2C customer bases. This experience was organised by the UNSW Global Business Practicum (GBP).</p>
@@ -118,11 +115,14 @@ const WorkPage = () => {
                                 </ul>
                             </div>
                         </div>
+                        <div className="md:w-1/2 md:order-1 px-4">
+                            <img src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756982186/mtm_kmgskl.png" alt="PT MTM logo" className="w-4/5 mx-auto rounded-lg" />
+                        </div>
                     </section>
 
-                    {/* Commbank Subsection */ }
+                    {/* Commbank Subsection: Image Right on large, Image Below on small */ }
                     <section ref={ cbaRef } className={ `${ getClasses(cbaInView) } mb-24 flex flex-col md:flex-row items-center gap-12` }>
-                        <div className="md:w-1/2 order-2 md:order-1 px-4">
+                        <div className="md:w-1/2 md:order-1 px-4">
                             <h3 className="text-2xl font-montserrat font-bold text-accent-blue mb-4">Commbank, Sydney, Australia</h3>
                             <h4 className="text-xl font-montserrat font-bold text-accent-green mb-4">Software Engineering Intern</h4>
                             <p className="text-lg font-inter text-primary-text mb-6">I was involved in a 10-member database team at CBA in Sydney, Australia, making improvements to the management and security of customer-sensitive data related to mortgage insurance. This experience was organised by the UNSW Coop Office, and also involved submitting 4 reflections and an end-of-internship presentation to the Coop Office.</p>
@@ -146,17 +146,14 @@ const WorkPage = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="md:w-1/2 order-1 md:order-2 px-4">
+                        <div className="md:w-1/2 md:order-2 px-4">
                             <img src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756982456/cba-3_z8qhxw.jpg" alt="Commbank building" className="w-4/5 mx-auto rounded-lg" />
                         </div>
                     </section>
 
-                    {/* Casual Maths Tutor Subsection */ }
+                    {/* Casual Maths Tutor Subsection: Image Left on large, Image Below on small */ }
                     <section ref={ tutorRef } className={ `${ getClasses(tutorInView) } mb-24 flex flex-col md:flex-row items-center gap-12` }>
-                        <div className="md:w-1/2 order-2 md:order-1 px-4">
-                            <img src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756980501/tutoring_ivsbmm.jpg" alt="Tutoring graphic" className="w-4/5 mx-auto rounded-lg" />
-                        </div>
-                        <div className="md:w-1/2 order-1 md:order-2 px-4">
+                        <div className="md:w-1/2 md:order-2 px-4">
                             <h3 className="text-2xl font-montserrat font-bold text-accent-blue mb-4">Casual Maths Tutor</h3>
                             <h4 className="text-xl font-montserrat font-bold text-accent-green mb-4">Self-Employed</h4>
                             <p className="text-lg font-inter text-primary-text mb-6">I have been teaching students in years 3-12 over 5 years to boost their mathematical capabilities, resulting in higher grades and some students promoting to extension maths classes. My teaching style is personal and tailored for each student, unlike most coaching colleges, meaning I create my own worksheets and give them specific tips and guidance to understanding problems</p>
@@ -175,6 +172,9 @@ const WorkPage = () => {
                                 </ul>
                             </div>
                         </div>
+                        <div className="md:w-1/2 md:order-1 px-4">
+                            <img src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756980501/tutoring_ivsbmm.jpg" alt="Tutoring graphic" className="w-4/5 mx-auto rounded-lg" />
+                        </div>
                     </section>
                 </div>
             </div>
@@ -192,9 +192,9 @@ const WorkPage = () => {
             {/* Main content with gradient background for volunteer subsections */ }
             <div className="py-16" style={ { background: 'linear-gradient(to bottom, #171825, #1b2933)' } }>
                 <div className="container mx-auto px-8">
-                    {/* Music/Worship leader Subsection */ }
+                    {/* Music/Worship leader Subsection: Image Right on large, Image Below on small */ }
                     <section ref={ worshipRef } className={ `${ getClasses(worshipInView) } mb-24 flex flex-col md:flex-row items-center gap-12` }>
-                        <div className="md:w-1/2 order-2 md:order-1 px-4">
+                        <div className="md:w-1/2 md:order-1 px-4">
                             <h3 className="text-2xl font-montserrat font-bold text-accent-blue mb-4">Marsfield Community Church</h3>
                             <h4 className="text-xl font-montserrat font-bold text-accent-green mb-4">Band Leader</h4>
                             <p className="text-lg font-inter text-primary-text mb-6">I have been part of a band playing worship music at my local church for a long time, but only over the last 3 or so years starting to lead the band. The leadership skills I have gained have helped me to lead well so the band members can play and sing in a simple way that helps the church to engage more and be closer as a community.</p>
@@ -213,17 +213,14 @@ const WorkPage = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="md:w-1/2 order-1 md:order-2 px-4">
+                        <div className="md:w-1/2 md:order-2 px-4">
                             <img src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756980511/worship_zoh18f.png" alt="Worship band graphic" className="w-4/5 mx-auto rounded-lg" />
                         </div>
                     </section>
 
-                    {/* Youth group leader Subsection */ }
+                    {/* Youth group leader Subsection: Image Left on large, Image Below on small */ }
                     <section ref={ youthRef } className={ `${ getClasses(youthInView) } mb-24 flex flex-col md:flex-row items-center gap-12` }>
-                        <div className="md:w-1/2 order-2 md:order-1 px-4">
-                            <img src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756980501/youth-2_p72mpe.jpg" alt="Youth group graphic" className="w-4/5 mx-auto rounded-lg" />
-                        </div>
-                        <div className="md:w-1/2 order-1 md:order-2 px-4">
+                        <div className="md:w-1/2 md:order-2 px-4">
                             <h3 className="text-2xl font-montserrat font-bold text-accent-blue mb-4">Marsfield Community Church</h3>
                             <h4 className="text-xl font-montserrat font-bold text-accent-green mb-4">Youth Leader</h4>
                             <p className="text-lg font-inter text-primary-text mb-6">I was involved in serving at a youth group for 4 years, hanging out with and discipling teens from years 6-12. Some of the youth I’ve had the opportunity of leading have decided to lead youth after graduating, while others have moved on. Part of this involves organising events with the youth, giving bible talks and revamping some existing digital media like powerpoint templates and flyers.</p>
@@ -242,6 +239,9 @@ const WorkPage = () => {
                                     <li>Having fun hanging out with the youth and organising fun games and events has helped me understand the importance of community and belonging</li>
                                 </ul>
                             </div>
+                        </div>
+                        <div className="md:w-1/2 md:order-1 px-4">
+                            <img src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756980501/youth-2_p72mpe.jpg" alt="Youth group graphic" className="w-4/5 mx-auto rounded-lg" />
                         </div>
                     </section>
                 </div>

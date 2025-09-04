@@ -38,7 +38,7 @@ const HomePage = () => {
             {/* Hero Section with full screen height */ }
             <div
                 className="relative h-screen bg-cover bg-center bg-fixed flex items-center justify-center text-center"
-                style={ { backgroundImage: `url('https://res.cloudinary.com/dg6nuqapw/image/upload/v1755140434/site-reliability_tec5kv.png')` } }
+                style={ { backgroundImage: `url('https://res.cloudinary.com/dg6nuqapw/image/upload/v1756980513/vr-2_jyclpi.png')` } }
             >
                 <div className="absolute inset-0 bg-primary-bg opacity-70"></div>
                 <div className="relative z-10 p-8 pt-20">
@@ -151,7 +151,7 @@ const HomePage = () => {
             <section
                 ref={ resumeTitleRef }
                 className="relative py-24 text-center bg-cover bg-center bg-fixed"
-                style={ { backgroundImage: `url('https://res.cloudinary.com/dg6nuqapw/image/upload/v1755140434/site-reliability_tec5kv.png')` } }
+                style={ { backgroundImage: `url('https://res.cloudinary.com/dg6nuqapw/image/upload/v1756980513/vr-2_jyclpi.png')` } }
             >
                 <div className="absolute inset-0 bg-primary-bg opacity-70"></div>
                 <div className={ `relative z-10 max-w-3xl mx-auto ${ getClasses(resumeTitleInView) }` }>

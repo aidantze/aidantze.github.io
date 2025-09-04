@@ -140,30 +140,35 @@ const AboutPage = () => {
                     {/* Skills Section */ }
                     <section className="mb-24 bg-accent-green py-8 rounded-lg">
                         <h2 ref={ skillsTitleRef } className={ `${ getClasses(skillsTitleInView) } text-3xl text-center font-montserrat font-bold text-primary-bg mb-12` }>Skills</h2>
-                        <div ref={ skillsSectionRef } className={ `${ getClasses(skillsSectionInView) } space-y-4` }>
-                            <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold overflow-hidden whitespace-nowrap">
-                                <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-left' : '' }` }>{ techSkills } { techSkills } { techSkills }</span>
-                            </div>
-                            <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold overflow-hidden whitespace-nowrap">
-                                <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-right' : '' }` }>{ softSkills } { softSkills } { softSkills }</span>
-                            </div>
-                            <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold overflow-hidden whitespace-nowrap">
-                                <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-left' : '' }` }>{ devopsSkills } { devopsSkills } { devopsSkills }</span>
-                            </div>
-                            <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold overflow-hidden whitespace-nowrap">
-                                <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-right' : '' }` }>{ aiSkills } { aiSkills } { aiSkills }</span>
-                            </div>
-                            <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold overflow-hidden whitespace-nowrap">
-                                <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-left' : '' }` }>{ designSkills } { designSkills } { designSkills }</span>
-                            </div>
-                            <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold overflow-hidden whitespace-nowrap">
-                                <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-right' : '' }` }>{ processSkills } { processSkills } { processSkills }</span>
-                            </div>
-                            <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold overflow-hidden whitespace-nowrap">
-                                <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-left' : '' }` }>{ fintechSkills } { fintechSkills } { fintechSkills }</span>
-                            </div>
-                            <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold overflow-hidden whitespace-nowrap">
-                                <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-right' : '' }` }>{ leadershipSkills } { leadershipSkills } { leadershipSkills }</span>
+                        <div
+                            ref={ skillsSectionRef }
+                            className={ `${ getClasses(skillsSectionInView) } ${ isAnimationEnabled ? 'overflow-hidden' : 'overflow-x-auto md:overflow-hidden' }` }
+                        >
+                            <div className="w-max md:w-full space-y-4">
+                                <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold whitespace-nowrap overflow-hidden">
+                                    <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-left' : '' }` }>{ techSkills } { techSkills } { techSkills }</span>
+                                </div>
+                                <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold whitespace-nowrap overflow-hidden">
+                                    <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-right' : '' }` }>{ softSkills } { softSkills } { softSkills }</span>
+                                </div>
+                                <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold whitespace-nowrap overflow-hidden">
+                                    <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-left' : '' }` }>{ devopsSkills } { devopsSkills } { devopsSkills }</span>
+                                </div>
+                                <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold whitespace-nowrap overflow-hidden">
+                                    <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-right' : '' }` }>{ aiSkills } { aiSkills } { aiSkills }</span>
+                                </div>
+                                <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold whitespace-nowrap overflow-hidden">
+                                    <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-left' : '' }` }>{ designSkills } { designSkills } { designSkills }</span>
+                                </div>
+                                <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold whitespace-nowrap overflow-hidden">
+                                    <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-right' : '' }` }>{ processSkills } { processSkills } { processSkills }</span>
+                                </div>
+                                <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold whitespace-nowrap overflow-hidden">
+                                    <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-left' : '' }` }>{ fintechSkills } { fintechSkills } { fintechSkills }</span>
+                                </div>
+                                <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold whitespace-nowrap overflow-hidden">
+                                    <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-right' : '' }` }>{ leadershipSkills } { leadershipSkills } { leadershipSkills }</span>
+                                </div>
                             </div>
                         </div>
                         {/* Toggle Switch */ }
@@ -171,7 +176,7 @@ const AboutPage = () => {
                             <span className="mr-4 text-primary-bg font-montserrat font-bold text-sm">Toggle Animation</span>
                             <button
                                 onClick={ () => setIsAnimationEnabled(!isAnimationEnabled) }
-                                className={ `relative inline-flex items-center h-6 rounded-full w-11 transition-colors duration-300 ease-in-out focus:outline-none ${ isAnimationEnabled ? 'bg-primary-bg' : 'bg-gray-500' }` }
+                                className={ `relative inline-flex items-center h-6 rounded-full w-11 transition-colors duration-300 ease-in-out focus:outline-none ${ isAnimationEnabled ? 'bg-primary-bg' : 'bg-gray-400' }` }
                                 aria-label="Toggle skills animation"
                             >
                                 <span
