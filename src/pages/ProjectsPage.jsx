@@ -7,8 +7,8 @@ const ProjectsPage = () => {
     }, []);
 
     return (
-        <div className="bg-primary-bg min-h-screen flex items-center justify-center text-primary-text font-inter">
-            <p>Redirecting to Projects Page...</p>
+        <div className="bg-primary-bg min-h-screen flex items-center justify-center md:text-4xl font-montserrat font-bold text-primary-text">
+            <h3>Redirecting to Projects Page...</h3>
         </div>
     );
 };

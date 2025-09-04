@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useInView from '../hooks/useInView';
 import { FaLightbulb, FaComment, FaBrain } from 'react-icons/fa';
@@ -6,6 +6,9 @@ import '../index.css';
 import '../styles/scrollingText.css';
 
 const AboutPage = () => {
+    // State for toggling the animation
+    const [isAnimationEnabled, setIsAnimationEnabled] = useState(true);
+
     // Career Profile Section
     const [careerProfileTitleRef, careerProfileTitleInView] = useInView();
     const [careerProfileTilesRef, careerProfileTilesInView] = useInView();
@@ -135,33 +138,46 @@ const AboutPage = () => {
                     </section>
 
                     {/* Skills Section */ }
-                    <section className="mb-24 bg-accent-green py-8 rounded-lg"> {/* Added rounded-lg here */ }
+                    <section className="mb-24 bg-accent-green py-8 rounded-lg">
                         <h2 ref={ skillsTitleRef } className={ `${ getClasses(skillsTitleInView) } text-3xl text-center font-montserrat font-bold text-primary-bg mb-12` }>Skills</h2>
                         <div ref={ skillsSectionRef } className={ `${ getClasses(skillsSectionInView) } space-y-4` }>
                             <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold overflow-hidden whitespace-nowrap">
-                                <span className="inline-block text-xl md:text-2xl py-2 scroll-left">{ techSkills } { techSkills } { techSkills }</span>
+                                <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-left' : '' }` }>{ techSkills } { techSkills } { techSkills }</span>
                             </div>
                             <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold overflow-hidden whitespace-nowrap">
-                                <span className="inline-block text-xl md:text-2xl py-2 scroll-right">{ softSkills } { softSkills } { softSkills }</span>
+                                <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-right' : '' }` }>{ softSkills } { softSkills } { softSkills }</span>
                             </div>
                             <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold overflow-hidden whitespace-nowrap">
-                                <span className="inline-block text-xl md:text-2xl py-2 scroll-left">{ devopsSkills } { devopsSkills } { devopsSkills }</span>
+                                <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-left' : '' }` }>{ devopsSkills } { devopsSkills } { devopsSkills }</span>
                             </div>
                             <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold overflow-hidden whitespace-nowrap">
-                                <span className="inline-block text-xl md:text-2xl py-2 scroll-right">{ aiSkills } { aiSkills } { aiSkills }</span>
+                                <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-right' : '' }` }>{ aiSkills } { aiSkills } { aiSkills }</span>
                             </div>
                             <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold overflow-hidden whitespace-nowrap">
-                                <span className="inline-block text-xl md:text-2xl py-2 scroll-left">{ designSkills } { designSkills } { designSkills }</span>
+                                <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-left' : '' }` }>{ designSkills } { designSkills } { designSkills }</span>
                             </div>
                             <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold overflow-hidden whitespace-nowrap">
-                                <span className="inline-block text-xl md:text-2xl py-2 scroll-right">{ processSkills } { processSkills } { processSkills }</span>
+                                <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-right' : '' }` }>{ processSkills } { processSkills } { processSkills }</span>
                             </div>
                             <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold overflow-hidden whitespace-nowrap">
-                                <span className="inline-block text-xl md:text-2xl py-2 scroll-left">{ fintechSkills } { fintechSkills } { fintechSkills }</span>
+                                <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-left' : '' }` }>{ fintechSkills } { fintechSkills } { fintechSkills }</span>
                             </div>
                             <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold overflow-hidden whitespace-nowrap">
-                                <span className="inline-block text-xl md:text-2xl py-2 scroll-right">{ leadershipSkills } { leadershipSkills } { leadershipSkills }</span>
+                                <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-right' : '' }` }>{ leadershipSkills } { leadershipSkills } { leadershipSkills }</span>
                             </div>
+                        </div>
+                        {/* Toggle Switch */ }
+                        <div className="flex justify-center items-center mt-8">
+                            <span className="mr-4 text-primary-bg font-montserrat font-bold text-sm">Toggle Animation</span>
+                            <button
+                                onClick={ () => setIsAnimationEnabled(!isAnimationEnabled) }
+                                className={ `relative inline-flex items-center h-6 rounded-full w-11 transition-colors duration-300 ease-in-out focus:outline-none ${ isAnimationEnabled ? 'bg-primary-bg' : 'bg-gray-500' }` }
+                                aria-label="Toggle skills animation"
+                            >
+                                <span
+                                    className={ `inline-block w-4 h-4 transform bg-accent-green rounded-full transition-transform duration-300 ease-in-out ${ isAnimationEnabled ? 'translate-x-6' : 'translate-x-1' }` }
+                                />
+                            </button>
                         </div>
                     </section>
                 </div>
@@ -206,7 +222,7 @@ const AboutPage = () => {
                                 <img
                                     src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756968971/vr-eng_ixmrz4.png"
                                     alt="VR Engineering graphic"
-                                    className="w-4/5 mx-auto"
+                                    className="w-4/5 mx-auto rounded-lg"
                                 />
                             </div>
                         </div>
@@ -245,7 +261,7 @@ const AboutPage = () => {
                                 <img
                                     src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1755140466/data-analytics_bulkla.jpg"
                                     alt="Data analytics graphic"
-                                    className="w-4/5 mx-auto"
+                                    className="w-4/5 mx-auto rounded-lg"
                                 />
                             </div>
                         </div>
@@ -284,7 +300,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            {/* Resume/Portfolio Section */ }
+            {/* Resume/Portfolio Section with fixed background */ }
             <section
                 ref={ resumeTitleRef }
                 className="relative py-24 text-center bg-cover bg-center bg-fixed"
@@ -302,11 +318,11 @@ const AboutPage = () => {
                             </Link>
                         </div>
                         <div ref={ resumeButton2Ref } className={ `${ getClasses(resumeButton2InView) }` }>
-                            <Link to="https://github.com/aidantze/projects.github.io">
+                            <a href="https://github.com/aidantze/projects.github.io" target="_blank" rel="noopener noreferrer">
                                 <button className="bg-accent-blue hover:bg-opacity-80 transition-colors duration-300 text-primary-text font-montserrat font-bold py-3 px-8 rounded-full" alt="View my GitHub portfolio">
                                     View Portfolio
                                 </button>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>
