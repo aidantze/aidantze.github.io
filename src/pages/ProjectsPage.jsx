@@ -1,13 +1,14 @@
-import React from 'react';
-import '../index.css';
+import React, { useEffect } from 'react';
 
 const ProjectsPage = () => {
+    useEffect(() => {
+        // Redirect to the external GitHub portfolio
+        window.location.replace("https://github.com/aidantze/projects.github.io");
+    }, []);
+
     return (
-        <div className="container mx-auto px-4 mt-20 py-16 text-center">
-            <h1 className="text-4xl font-montserrat font-bold text-primary-text">Projects</h1>
-            <p className="text-lg font-inter text-subtle-gray mt-4">
-                This page is currently under construction. Please check back later for my top relevant projects.
-            </p>
+        <div className="bg-primary-bg min-h-screen flex items-center justify-center text-primary-text font-inter">
+            <p>Redirecting to Projects Page...</p>
         </div>
     );
 };
