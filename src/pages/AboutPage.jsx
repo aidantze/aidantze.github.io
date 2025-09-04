@@ -225,8 +225,8 @@ const AboutPage = () => {
                             </div>
                             <div ref={ seImageRef } className={ `md:w-1/2 order-2 md:order-1 ${ getClasses(seImageInView) }` }>
                                 <img
-                                    src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756968971/vr-eng_ixmrz4.png"
-                                    alt="VR Engineering graphic"
+                                    src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756991452/site-reliability_lmk39q.png"
+                                    alt="Software analytics graphic"
                                     className="w-4/5 mx-auto rounded-lg"
                                 />
                             </div>
