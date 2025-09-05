@@ -88,9 +88,9 @@ const AboutPage = () => {
     const techSkills = "python • java • c++ • node.js • react.js • C# • asp .net • css • sql • pandas • zsh • solidity •";
     const softSkills = "pace • agile • scrum • scope • jira • backlog • stories • epics • retrospective • standups •";
     const devopsSkills = "devops • ci/cd • aws • cloud • serverless • site reliability • monitoring • logging • alerting •";
-    const aiSkills = "ai • machine learning • neural networks • llms • ar/vr • nlp • computer vision • analytics •";
-    const designSkills = "api • crud • swagger • docker • uml • mongodb • tech stack • architecture •";
-    const processSkills = "ui/ux • figma • usability tests • unit tests • integration tests • acceptance criteria • accessibility •";
+    const aiSkills = "ai • machine learning • neural networks • llms • ar/vr • nlp • computer vision • gpt • github copilot •";
+    const designSkills = "api • crud • swagger • docker • uml • mongodb • tech stack • architecture • data analytics •";
+    const processSkills = "ui/ux • figma • usability tests • unit tests • integrations • acceptance criteria • accessibility •";
     const fintechSkills = "fintech • blockchain • crypto • smart contract • robo advice • p2p lending • foreign exchange •";
     const leadershipSkills = "leadership • growth mindset • faith • courage • collaboration • commitment • entrepreneur •";
 
