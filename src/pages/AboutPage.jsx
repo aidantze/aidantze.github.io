@@ -140,35 +140,70 @@ const AboutPage = () => {
                     {/* Skills Section */ }
                     <section className="mb-24 bg-accent-green py-8 rounded-lg">
                         <h2 ref={ skillsTitleRef } className={ `${ getClasses(skillsTitleInView) } text-3xl text-center font-montserrat font-bold text-primary-bg mb-12` }>Skills</h2>
-                        <div
-                            ref={ skillsSectionRef }
-                            className={ `${ getClasses(skillsSectionInView) } ${ isAnimationEnabled ? 'overflow-hidden' : 'overflow-x-auto md:overflow-hidden' }` }
-                        >
-                            <div className="w-max md:w-full space-y-4">
-                                <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold whitespace-nowrap overflow-hidden">
-                                    <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-left' : '' }` }>{ techSkills } { techSkills } { techSkills }</span>
-                                </div>
-                                <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold whitespace-nowrap overflow-hidden">
-                                    <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-right' : '' }` }>{ softSkills } { softSkills } { softSkills }</span>
-                                </div>
-                                <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold whitespace-nowrap overflow-hidden">
-                                    <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-left' : '' }` }>{ devopsSkills } { devopsSkills } { devopsSkills }</span>
-                                </div>
-                                <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold whitespace-nowrap overflow-hidden">
-                                    <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-right' : '' }` }>{ aiSkills } { aiSkills } { aiSkills }</span>
-                                </div>
-                                <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold whitespace-nowrap overflow-hidden">
-                                    <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-left' : '' }` }>{ designSkills } { designSkills } { designSkills }</span>
-                                </div>
-                                <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold whitespace-nowrap overflow-hidden">
-                                    <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-right' : '' }` }>{ processSkills } { processSkills } { processSkills }</span>
-                                </div>
-                                <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold whitespace-nowrap overflow-hidden">
-                                    <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-left' : '' }` }>{ fintechSkills } { fintechSkills } { fintechSkills }</span>
-                                </div>
-                                <div className="bg-accent-green text-primary-bg font-montserrat font-extrabold whitespace-nowrap overflow-hidden">
-                                    <span className={ `inline-block text-xl md:text-2xl py-2 ${ isAnimationEnabled ? 'scroll-right' : '' }` }>{ leadershipSkills } { leadershipSkills } { leadershipSkills }</span>
-                                </div>
+                        <div ref={ skillsSectionRef } className={ `${ getClasses(skillsSectionInView) } space-y-4` }>
+                            {/* Skill Line 1 */ }
+                            <div className={ `bg-accent-green text-primary-bg font-montserrat font-extrabold ${ isAnimationEnabled ? 'overflow-hidden whitespace-nowrap' : 'px-4 py-2' }` }>
+                                { isAnimationEnabled ? (
+                                    <span className="inline-block text-xl md:text-2xl py-2 scroll-left">{ techSkills } { techSkills } { techSkills }</span>
+                                ) : (
+                                    <p className="text-xl md:text-2xl">{ techSkills }</p>
+                                ) }
+                            </div>
+                            {/* Skill Line 2 */ }
+                            <div className={ `bg-accent-green text-primary-bg font-montserrat font-extrabold ${ isAnimationEnabled ? 'overflow-hidden whitespace-nowrap' : 'px-4 py-2' }` }>
+                                { isAnimationEnabled ? (
+                                    <span className="inline-block text-xl md:text-2xl py-2 scroll-right">{ softSkills } { softSkills } { softSkills }</span>
+                                ) : (
+                                    <p className="text-xl md:text-2xl">{ softSkills }</p>
+                                ) }
+                            </div>
+                            {/* Skill Line 3 */ }
+                            <div className={ `bg-accent-green text-primary-bg font-montserrat font-extrabold ${ isAnimationEnabled ? 'overflow-hidden whitespace-nowrap' : 'px-4 py-2' }` }>
+                                { isAnimationEnabled ? (
+                                    <span className="inline-block text-xl md:text-2xl py-2 scroll-left">{ devopsSkills } { devopsSkills } { devopsSkills }</span>
+                                ) : (
+                                    <p className="text-xl md:text-2xl">{ devopsSkills }</p>
+                                ) }
+                            </div>
+                            {/* Skill Line 4 */ }
+                            <div className={ `bg-accent-green text-primary-bg font-montserrat font-extrabold ${ isAnimationEnabled ? 'overflow-hidden whitespace-nowrap' : 'px-4 py-2' }` }>
+                                { isAnimationEnabled ? (
+                                    <span className="inline-block text-xl md:text-2xl py-2 scroll-right">{ aiSkills } { aiSkills } { aiSkills }</span>
+                                ) : (
+                                    <p className="text-xl md:text-2xl">{ aiSkills }</p>
+                                ) }
+                            </div>
+                            {/* Skill Line 5 */ }
+                            <div className={ `bg-accent-green text-primary-bg font-montserrat font-extrabold ${ isAnimationEnabled ? 'overflow-hidden whitespace-nowrap' : 'px-4 py-2' }` }>
+                                { isAnimationEnabled ? (
+                                    <span className="inline-block text-xl md:text-2xl py-2 scroll-left">{ designSkills } { designSkills } { designSkills }</span>
+                                ) : (
+                                    <p className="text-xl md:text-2xl">{ designSkills }</p>
+                                ) }
+                            </div>
+                            {/* Skill Line 6 */ }
+                            <div className={ `bg-accent-green text-primary-bg font-montserrat font-extrabold ${ isAnimationEnabled ? 'overflow-hidden whitespace-nowrap' : 'px-4 py-2' }` }>
+                                { isAnimationEnabled ? (
+                                    <span className="inline-block text-xl md:text-2xl py-2 scroll-right">{ processSkills } { processSkills } { processSkills }</span>
+                                ) : (
+                                    <p className="text-xl md:text-2xl">{ processSkills }</p>
+                                ) }
+                            </div>
+                            {/* Skill Line 7 */ }
+                            <div className={ `bg-accent-green text-primary-bg font-montserrat font-extrabold ${ isAnimationEnabled ? 'overflow-hidden whitespace-nowrap' : 'px-4 py-2' }` }>
+                                { isAnimationEnabled ? (
+                                    <span className="inline-block text-xl md:text-2xl py-2 scroll-left">{ fintechSkills } { fintechSkills } { fintechSkills }</span>
+                                ) : (
+                                    <p className="text-xl md:text-2xl">{ fintechSkills }</p>
+                                ) }
+                            </div>
+                            {/* Skill Line 8 */ }
+                            <div className={ `bg-accent-green text-primary-bg font-montserrat font-extrabold ${ isAnimationEnabled ? 'overflow-hidden whitespace-nowrap' : 'px-4 py-2' }` }>
+                                { isAnimationEnabled ? (
+                                    <span className="inline-block text-xl md:text-2xl py-2 scroll-right">{ leadershipSkills } { leadershipSkills } { leadershipSkills }</span>
+                                ) : (
+                                    <p className="text-xl md:text-2xl">{ leadershipSkills }</p>
+                                ) }
                             </div>
                         </div>
                         {/* Toggle Switch */ }
@@ -226,7 +261,7 @@ const AboutPage = () => {
                             <div ref={ seImageRef } className={ `md:w-1/2 order-2 md:order-1 ${ getClasses(seImageInView) }` }>
                                 <img
                                     src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756991452/site-reliability_lmk39q.png"
-                                    alt="Software analytics graphic"
+                                    alt="Software site reliability graphic"
                                     className="w-4/5 mx-auto rounded-lg"
                                 />
                             </div>
