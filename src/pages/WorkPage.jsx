@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import ResumeSection from '../components/ResumeSection';
 import useInView from '../hooks/useInView';
 import { FaSuitcase, FaHandshake } from 'react-icons/fa';
 import '../index.css';
@@ -19,11 +19,6 @@ const WorkPage = () => {
     const [volunteerTitleRef, volunteerTitleInView] = useInView();
     const [worshipRef, worshipInView] = useInView();
     const [youthRef, youthInView] = useInView();
-
-    // Resume/Portfolio Section
-    const [resumeTitleRef, resumeTitleInView] = useInView();
-    const [resumeButton1Ref, resumeButton1InView] = useInView();
-    const [resumeButton2Ref, resumeButton2InView] = useInView();
 
     const animateIn = "opacity-100 translate-y-0";
     const animateOut = "opacity-0 translate-y-10";
@@ -248,32 +243,9 @@ const WorkPage = () => {
             </div>
 
             {/* Resume/Portfolio Section with fixed background */ }
-            <section
-                ref={ resumeTitleRef }
-                className="relative py-24 text-center bg-cover bg-center bg-fixed"
-                style={ { backgroundImage: `url('https://res.cloudinary.com/dg6nuqapw/image/upload/v1756971328/cba_i3dmxb.png')` } }
-            >
-                <div className="absolute inset-0 bg-primary-bg opacity-70"></div>
-                <div className={ `relative z-10 max-w-3xl mx-auto ${ getClasses(resumeTitleInView) }` }>
-                    <h2 className="text-3xl font-montserrat font-bold text-primary-text mb-8">View my Resume and Project Portfolio</h2>
-                    <div className="flex justify-center space-x-6">
-                        <div ref={ resumeButton1Ref } className={ `${ getClasses(resumeButton1InView) }` }>
-                            <Link to="/downloadresume">
-                                <button className="bg-accent-green hover:bg-opacity-80 transition-colors duration-300 text-primary-bg font-montserrat font-bold py-3 px-8 rounded-full" alt="Download my resume">
-                                    Download CV
-                                </button>
-                            </Link>
-                        </div>
-                        <div ref={ resumeButton2Ref } className={ `${ getClasses(resumeButton2InView) }` }>
-                            <a href="https://github.com/aidantze/projects.github.io" target="_blank" rel="noopener noreferrer">
-                                <button className="bg-accent-blue hover:bg-opacity-80 transition-colors duration-300 text-primary-text font-montserrat font-bold py-3 px-8 rounded-full" alt="View my GitHub portfolio">
-                                    View Portfolio
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <ResumeSection
+                backgroundImage="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756971328/cba_i3dmxb.png"
+            />
         </div>
     );
 };
