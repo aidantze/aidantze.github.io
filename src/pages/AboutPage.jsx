@@ -49,7 +49,7 @@ const AboutPage = () => {
 
     const qualifications = [
         {
-            text: "78 WAM with 9 High Distinction subjects",
+            text: "78 WAM with 10 High Distinction subjects",
             bg: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1756967007/unsw_r2psi7.jpg",
             icon: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1755486949/unsw_yiov7i.png"
         },
@@ -337,7 +337,7 @@ const AboutPage = () => {
 
             {/* Resume/Portfolio Section with fixed background */ }
             <ResumeSection
-                backgroundImage="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756971328/cba_i3dmxb.png"
+                backgroundImage="https://res.cloudinary.com/dg6nuqapw/image/upload/v1755140442/software-eng_joglik.png"
             />
         </div>
     );

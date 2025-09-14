@@ -145,7 +145,7 @@ const HomePage = () => {
 
             {/* Resume/Portfolio Section */ }
             <ResumeSection
-                backgroundImage="https://res.cloudinary.com/dg6nuqapw/image/upload/v1755140434/site-reliability_tec5kv.png"
+                backgroundImage="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756980513/vr-2_jyclpi.png"
             />
         </div>
     );

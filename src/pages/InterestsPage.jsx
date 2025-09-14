@@ -233,7 +233,7 @@ const InterestsPage = () => {
 
             {/* Resume/Portfolio Section */ }
             <ResumeSection
-                backgroundImage="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756971328/cba_i3dmxb.png"
+                backgroundImage="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756989711/gaming-3_d9phzl.png"
             />
         </div>
     );
