@@ -64,7 +64,7 @@ const AboutPage = () => {
             icon: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1755486948/hsc_h0ostc.png"
         },
         {
-            text: "UNSW FINSOC Corporate Finance Analyst Competition (1st Place)",
+            text: "FINSOC Corporate Finance Analyst Program",
             bg: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1756967003/finance-analyst_y73i6x.png",
             icon: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1755486948/finsoc_kf0nn0.png"
         },
@@ -74,18 +74,28 @@ const AboutPage = () => {
             icon: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1755486949/unsw_yiov7i.png"
         },
         {
-            text: "Premier's Volunteer Recognition Program Certificate",
+            text: "Premier's Volunteer Recognition Program",
             bg: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1756967009/volunteering_zftqmj.png",
             icon: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1755486949/nswgov_cnd8e7.png"
+        },
+        {
+            text: "10+ CodeCademy Certificates",
+            bg: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1758202800/codecademy2_mbe0je.png",
+            icon: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1758203014/codecademy_hpzypa.png"
+        },
+        {
+            text: "1x Forage Virtual Experience Certificates",
+            bg: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1758202546/vr-eng_vn2ac4.png",
+            icon: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1758203018/forage_h8sa4y.png"
         }
     ];
 
-    const techSkills = "python • java • c++ • node.js • react.js • C# • asp .net • css • sql • pandas • zsh • solidity •";
+    const techSkills = "python • java • c++ • node.js • react.js • C# asp .net • unity • sql • pandas • zsh • solidity •";
     const softSkills = "pace • agile • scrum • scope • jira • backlog • stories • epics • retrospective • standups •";
-    const devopsSkills = "devops • ci/cd • aws • cloud • serverless • site reliability • monitoring • logging • alerting •";
-    const aiSkills = "ai • machine learning • neural networks • llms • ar/vr • nlp • computer vision • gpt • github copilot •";
-    const designSkills = "api • crud • swagger • docker • uml • mongodb • tech stack • architecture • data analytics •";
-    const processSkills = "ui/ux • figma • usability tests • unit tests • integrations • acceptance criteria • accessibility •";
+    const devopsSkills = "devops • ci/cd • git • aws • cloud • site reliability • observability • solutions architecture •";
+    const aiSkills = "ai • machine learning • deep learning • llm • ar/vr • nlp • computer vision • gpt • github copilot •";
+    const designSkills = "api • crud • swagger • docker • uml diagram • mongodb • data analytics • prompt engineering •";
+    const processSkills = "ui/ux • figma • usability • unit tests • integrations • acceptance criteria • accessibility •";
     const fintechSkills = "fintech • blockchain • crypto • smart contract • robo advice • p2p lending • foreign exchange •";
     const leadershipSkills = "leadership • growth mindset • faith • courage • collaboration • commitment • entrepreneur •";
 
@@ -218,7 +228,7 @@ const AboutPage = () => {
                 </div>
 
                 {/* Degree Section */ }
-                <div className="container mx-auto px-8 py-16">
+                <div className="container mx-auto px-8 pt-16">
                     <section className="mb-24">
                         <h2 ref={ degreeTitleRef } className={ `${ getClasses(degreeTitleInView) } text-3xl text-center font-montserrat font-bold text-primary-text mb-12` }>Degree</h2>
 
@@ -302,11 +312,9 @@ const AboutPage = () => {
                         </div>
                     </section>
                 </div>
-            </div>
 
-            {/* Qualifications Section */ }
-            <div className="py-16">
-                <div className="container mx-auto px-8">
+                {/* Qualifications Section */ }
+                <div className="container mx-auto px-8 pb-16">
                     <section className="mb-24 text-center">
                         <h2 ref={ qualificationsTitleRef } className={ `${ getClasses(qualificationsTitleInView) } text-3xl font-montserrat font-bold text-primary-text mb-12` }>Qualifications</h2>
                         <div ref={ qualificationsTilesRef } className={ `${ getClasses(qualificationsTilesInView) } flex flex-wrap justify-center gap-8` }>

@@ -5,6 +5,7 @@ import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
+import VirtualPage from './pages/VirtualPage';
 import WorkPage from './pages/WorkPage';
 import InterestsPage from './pages/InterestsPage';
 import NotFoundPage from './pages/NotFoundPage.jsx';
@@ -18,6 +19,7 @@ function App() {
                     <Route path="/" element={ <HomePage /> } />
                     <Route path="/about" element={ <AboutPage /> } />
                     <Route path="/projects" element={ <ProjectsPage /> } />
+                    <Route path="/projects/virtual" element={ <VirtualPage /> } />
                     <Route path="/work" element={ <WorkPage /> } />
                     <Route path="/interests" element={ <InterestsPage /> } />
                     <Route path="*" element={ <NotFoundPage /> } />

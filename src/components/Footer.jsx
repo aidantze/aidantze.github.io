@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="container mx-auto px-8">
                 <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
                     {/* Left side: Page Links */ }
-                    <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6 md:mb-0">
+                    <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6 md:mb-0 font-montserrat">
                         <Link to="/" className="hover:text-primary-text transition-colors duration-300">Home</Link>
                         <Link to="/about" className="hover:text-primary-text transition-colors duration-300">About me</Link>
                         <Link to="/projects" className="hover:text-primary-text transition-colors duration-300">Projects</Link>

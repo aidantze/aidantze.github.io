@@ -43,7 +43,7 @@ const InterestsPage = () => {
         },
         {
             title: "Gaming",
-            text: "Play the fun games that keep me competitive",
+            text: "Discover the fun games that keep me competitive",
             icon: <FaDice />,
             bgImage: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1756989584/gaming_jrh8lq.png",
             href: "#gaming"
@@ -161,7 +161,7 @@ const InterestsPage = () => {
                         </div>
                         <div className="md:w-1/2 order-1 md:order-1 px-4"> {/* On small screens, text is order-1 (default). On md, text is order-2 */ }
                             <h3 className="text-2xl font-montserrat font-bold text-accent-blue mb-4">Board Games</h3>
-                            <p className="text-lg font-inter text-primary-text">When I was younger my family would get together to play board games together. We may not have the largest collection, but there are some board games I still enjoy today. These include the social deduction games (OneNight Werewolf, Secret Hitler, Coup) and other games (Catan, Tokaido, Power Grid). I hangout with my friends often playing these games, and we’re always looking for more fun board games to play.</p>
+                            <p className="text-lg font-inter text-primary-text">When I was younger my family would get together to play board games together. We may not have the largest collection, but there are some board games I still enjoy today. These include the social deduction games (OneNight Werewolf, Secret Hitler, Coup) and strategy games (Catan, Tokaido, Power Grid). I hangout with my friends often playing these games, and we’re always looking for more fun board games to play.</p>
                         </div>
                     </section>
                     {/* Escape Rooms Subsection: Image Right on large, Image Below on small */ }
@@ -181,7 +181,7 @@ const InterestsPage = () => {
                         </div>
                         <div className="md:w-1/2 order-1 md:order-1 px-4"> {/* On small screens, text is order-1 (default). On md, text is order-2 */ }
                             <h3 className="text-2xl font-montserrat font-bold text-accent-blue mb-4">Video Games</h3>
-                            <p className="text-lg font-inter text-primary-text">Most of the video games I play now are common mobile games which I won’t elaborate on much now, because all the kids play it and I keep telling myself to move on from them! But I’ve played them because my parents wouldn’t let me play too many PC games. The only PC games I ever played were Minecraft with some friends, and Warzone 2100, a nostalgic 90s war game. Still, I find it’s good to play them once in a while when I’m bored.</p>
+                            <p className="text-lg font-inter text-primary-text">Most of the video games I play now are common mobile games which I won’t elaborate on much now, because all the kids play it and I keep telling myself to move on from them! But I’ve played them because my parents wouldn’t let me play too many PC games. The only PC games I ever played were Minecraft with some friends, and Warzone 2100, a 90s RTS war game. Still, I find it’s good to play them once in a while when I’m bored.</p>
                         </div>
                     </section>
                 </div>
@@ -223,6 +223,7 @@ const InterestsPage = () => {
 
             {/* Faith Section */ }
             <div id="faith" className="py-24 bg-primary-bg">
+                {/* TODO: insert a cross icon at the top of this section? */ }
                 <section ref={ faithRef } className={ `${ getClasses(faithInView) } text-center max-w-4xl mx-auto px-8` }>
                     <h2 className="text-3xl font-montserrat font-bold text-primary-text mb-4">My Faith</h2>
                     <p className="text-lg font-inter text-primary-text">
