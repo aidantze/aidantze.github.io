@@ -245,7 +245,7 @@ const AboutPage = () => {
                                     I have over 9 years of programming experiences, and am familiar with the art of using logical reasoning and processes to make something creative. The career path I have chosen is a valuable career opportunity that is in high demand and is always developing as new technology improves the way we live.
                                 </p>
                                 <p ref={ seText2Ref } className={ `${ getClasses(seText2InView) } text-lg font-inter text-primary-text mb-6` }>
-                                    This website you are currently viewing was revamped from my very first attempt at frontend programming in Jan 2023, build using raw html/css. It has been upgraded to use React.js as of August 2025.
+                                    This website you are currently viewing was revamped from my very first attempt at frontend programming in Jan 2023, build using raw html/css. It has been upgraded to use React.js as of August 2025, and runs automated delivery pipelines which deploy a new version via Netlify every time a change is pushed.
                                 </p>
                                 <div ref={ seList1TitleRef } className={ `${ getClasses(seList1TitleInView) } mb-4` }>
                                     <h4 className="text-xl font-montserrat font-bold text-accent-green mb-2">My goals include:</h4>
