@@ -84,9 +84,14 @@ const AboutPage = () => {
             icon: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1758203014/codecademy_hpzypa.png"
         },
         {
-            text: "1x Forage Virtual Experience Certificates",
-            bg: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1758202546/vr-eng_vn2ac4.png",
+            text: "2x Forage Virtual Experience Certificates",
+            bg: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1766803374/virtualwork_ph3a4q.jpg",
             icon: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1758203018/forage_h8sa4y.png"
+        },
+        {
+            text: "UNSW Leadership Foundations & Innovator Pro",
+            bg: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1766804254/leadership_pbyoul.png",
+            icon: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1755486949/unsw_yiov7i.png"
         }
     ];
 
@@ -253,12 +258,12 @@ const AboutPage = () => {
                                 <div ref={ seList2TitleRef } className={ `${ getClasses(seList2TitleInView) } mb-4` }>
                                     <h4 className="text-xl font-montserrat font-bold text-accent-green mb-2">Desirable pathways:</h4>
                                     <ul ref={ seList2Ref } className={ `${ getClasses(seList2InView) } text-lg font-inter text-primary-text list-disc list-inside` }>
-                                        <li>API development</li>
+                                        <li>Backend API and database engineering</li>
                                         <li>Frontend engineering</li>
                                         <li>DevOps and CI/CD</li>
-                                        <li>AI engineering</li>
-                                        <li>Cloud engineering</li>
-                                        <li>Site reliability engineering</li>
+                                        <li>AI engineering and analytics</li>
+                                        <li>Cloud and site reliability engineering</li>
+                                        <li>VR development</li>
                                         <li>Solutions architecture</li>
                                     </ul>
                                 </div>
@@ -268,6 +273,11 @@ const AboutPage = () => {
                                     src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756991452/site-reliability_lmk39q.png"
                                     alt="Software site reliability graphic"
                                     className="w-4/5 mx-auto rounded-lg"
+                                />
+                                <img
+                                    src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1755140444/architecture_dv2lwc.png"
+                                    alt="Software solutions architecture graphic"
+                                    className="mt-12 w-4/5 mx-auto rounded-lg"
                                 />
                             </div>
                         </div>
@@ -307,6 +317,11 @@ const AboutPage = () => {
                                     src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1755140466/data-analytics_bulkla.jpg"
                                     alt="Data analytics graphic"
                                     className="w-4/5 mx-auto rounded-lg"
+                                />
+                                <img
+                                    src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1766803381/contactless_nxqtdk.png"
+                                    alt="Contactless payments graphic"
+                                    className="mt-12 w-4/5 mx-auto rounded-lg"
                                 />
                             </div>
                         </div>

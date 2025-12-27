@@ -124,7 +124,7 @@ const InterestsPage = () => {
                     <section ref={ guitarRef } className={ `${ getClasses(guitarInView) } mb-24 flex flex-col md:flex-row items-center gap-12` }>
                         <div className="md:w-1/2 order-1 md:order-1 px-4"> {/* On small screens, text is order-1 (default). On md, text is order-2 */ }
                             <h3 className="text-2xl font-montserrat font-bold text-accent-blue mb-4">Contemporary Music</h3>
-                            <p className="text-lg font-inter text-primary-text">I’ve played the guitar for a long time. Since I was in kindergarten I was taking lessons, then stopped for a bit and then picked it up again in year 7 to start playing guitar in the church band. Over the years my guitar playing has helped me to write a few songs, and enabled me to sing and play at the same time to lead the band in worship music.</p>
+                            <p className="text-lg font-inter text-primary-text">I’ve played the guitar for a long time. Since I was in kindergarten I was taking lessons, then stopped for a bit and then picked it up again in year 7 to start playing guitar in the church band. Over the years my guitar playing has helped me to write a few songs, singing and playing at the same time, and has enabled me to be trained in leading a band in worship music.</p>
                         </div>
                         <div className="md:w-1/2 order-2 md:order-2 px-4"> {/* On small screens, image is order-2 (default). On md, image is order-1 */ }
                             <img src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1755140678/music-hobby_poinqr.jpg" alt="Playing guitar" className="w-4/5 mx-auto rounded-lg" />
@@ -137,7 +137,7 @@ const InterestsPage = () => {
                         </div>
                         <div className="md:w-1/2 order-1 md:order-2 px-4"> {/* On small screens, text is order-1 (default). On md, text is order-2 */ }
                             <h3 className="text-2xl font-montserrat font-bold text-accent-blue mb-4">Orchestral Music</h3>
-                            <p className="text-lg font-inter text-primary-text">I’ve played the flute since year 4, taking lessons until year 12 where I played the flute for HSC performances. All through my school days I’ve played the flute in various concert bands and orchestras. Now at uni, I play in the UNSW Wind Symphony (think Symphony orchestra without the strings!) and really enjoy performing contemporary classical music to live audiences.</p>
+                            <p className="text-lg font-inter text-primary-text">I’ve played the flute since year 4, and played the flue for year 12 HSC performances. I’ve played in various school bands and orchestras throughout the years, and now play for the UNSW Wind Symphony. I really enjoy performing contemporary classical music to live audiences. My thesis project transforms the orchestra into an immersive VR experience, which wouldnt be possible without my understanding of orchestral music.</p>
                         </div>
                     </section>
                 </div>
@@ -181,7 +181,7 @@ const InterestsPage = () => {
                         </div>
                         <div className="md:w-1/2 order-1 md:order-1 px-4"> {/* On small screens, text is order-1 (default). On md, text is order-2 */ }
                             <h3 className="text-2xl font-montserrat font-bold text-accent-blue mb-4">Video Games</h3>
-                            <p className="text-lg font-inter text-primary-text">Most of the video games I play now are common mobile games which I won’t elaborate on much now, because all the kids play it and I keep telling myself to move on from them! But I’ve played them because my parents wouldn’t let me play too many PC games. The only PC games I ever played were Minecraft with some friends, and Warzone 2100, a 90s RTS war game. Still, I find it’s good to play them once in a while when I’m bored.</p>
+                            <p className="text-lg font-inter text-primary-text">My history of video games goes back to when I was a child playing Mario games on the Nintendo DS and some retro Playstation 2 games. Over the years I’ve been getting good at playing various mobile games, and only a few computer games like Warzone 2100 (a retro 90s RTS war game) since I’ve never had a decent PC to play games on. Video games help me stay motivated and alert, even if they’re just for fun.</p>
                         </div>
                     </section>
                 </div>
@@ -205,14 +205,14 @@ const InterestsPage = () => {
                         </div>
                         <div className="md:w-1/2 order-1 md:order-2 px-4"> {/* On small screens, text is order-1 (default). On md, text is order-2 */ }
                             <h3 className="text-2xl font-montserrat font-bold text-accent-blue mb-4">Graphic Design</h3>
-                            <p className="text-lg font-inter text-primary-text">My school let me use Adobe photoshop in year 9 which kicked off my graphic design arc. I made designs of posters, flyers, powerpoint slides and templates. I loved playing around with powerpoint transitions when I was younger. Now without my photoshop license, I still find ways to make the designs I want, mostly in Canva but other times using other... we'll say low-level apps.</p>
+                            <p className="text-lg font-inter text-primary-text">My school let me use Adobe photoshop in year 9 which kicked off my graphic design arc. I made designs of posters, flyers, powerpoint slides and templates. I loved playing around with powerpoint transitions when I was younger. Now without my photoshop license, I still find ways to make the designs I want, mostly in Canva but other times using other low-level apps.</p>
                         </div>
                     </section>
                     {/* Video Editing and Animation Subsection: Image Right on large, Image Below on small */ }
                     <section ref={ animationRef } className={ `${ getClasses(animationInView) } mb-24 flex flex-col md:flex-row items-center gap-12` }>
                         <div className="md:w-1/2 order-1 md:order-1 px-4"> {/* On small screens, text is order-1 (default). On md, text is order-2 */ }
                             <h3 className="text-2xl font-montserrat font-bold text-accent-blue mb-4">Video Editing and Animation</h3>
-                            <p className="text-lg font-inter text-primary-text">In 2023 I needed a new hobby, and went down a rabbit hole looking into movie and video editing. After my first video edit, which was just a funny compilation of my brother, I decided to experiment with animation by making a simple countdown timer for the youth group. Later this turned into video editing of youth group footage and more engaging animated videos. Now I can say I have a niche skill of animating and video editing with low-level apps!</p>
+                            <p className="text-lg font-inter text-primary-text">In 2023 I needed a new hobby, and went down a rabbit hole looking into movie and video editing. After my first video edit, which was just a funny compilation of my brother, I decided to experiment with animation by making a simple countdown timer for the youth group. Later this turned into video editing of various church footage and more engaging animated videos.</p>
                         </div>
                         <div className="md:w-1/2 order-2 md:order-2 px-4"> {/* On small screens, image is order-2 (default). On md, image is order-1 */ }
                             <img src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756989600/graphic-design-2_mdcuoj.png" alt="Animation" className="w-4/5 mx-auto rounded-lg" />

@@ -54,11 +54,11 @@ const HomePage = () => {
                     <section className="mb-24 text-center max-w-4xl mx-auto">
                         <h2 className="text-3xl font-montserrat font-bold text-primary-text mb-4">About Me</h2>
                         <p className="text-lg font-inter text-primary-text mb-6">
-                            I'm a 5th year UNSW student studying Software Engineering and Commerce. I have worked for 6 months at CBA in Sydney, Australia and 2 weeks in PT. MTM in Jakarta, Indonesia. I love music, graphic design and board games, and volunteer at my local church. I also work as a casual maths tutor.
+                            I'm a final year UNSW student studying Software Engineering and Commerce. I have worked for 6 months at CBA in Sydney, Australia and 2 weeks in PT. MTM in Jakarta, Indonesia. I love music, graphic design and board games, and volunteer at my local church. I also work as a casual maths tutor.
                         </p>
                         <Link to="/about">
                             <button className="bg-accent-blue hover:bg-opacity-80 transition-colors duration-300 text-primary-text font-montserrat font-bold py-3 px-8 rounded-full" alt="Button to view my full story">
-                                My Story
+                                View Profile
                             </button>
                         </Link>
                     </section>

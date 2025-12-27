@@ -111,7 +111,21 @@ const WorkPage = () => {
                             </div>
                         </div>
                         <div className="md:w-1/2 md:order-1 px-4">
-                            <img src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756982186/mtm_kmgskl.png" alt="PT MTM logo" className="w-4/5 mx-auto rounded-lg" />
+                            <img
+                                src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756982186/mtm_kmgskl.png"
+                                alt="PT MTM logo"
+                                className="w-4/5 mx-auto rounded-lg"
+                            />
+                            <img
+                                src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1766806252/cybersecurity_kx9xsw.png"
+                                alt="Cybersecurity graphic"
+                                className="w-4/5 mx-auto mt-12 rounded-lg"
+                            />
+                            <img
+                                src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1766806143/jakarta-2_aomvno.png"
+                                alt="Jakarta cityscape"
+                                className="w-4/5 mx-auto mt-12 rounded-lg"
+                            />
                         </div>
                     </section>
 
@@ -142,7 +156,21 @@ const WorkPage = () => {
                             </div>
                         </div>
                         <div className="md:w-1/2 md:order-2 px-4">
-                            <img src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1756982456/cba-3_z8qhxw.jpg" alt="Commbank building" className="w-4/5 mx-auto rounded-lg" />
+                            <img
+                                src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1766805525/cba-1_ufbpl2.jpg"
+                                alt="Commbank Office"
+                                className="w-4/5 mx-auto rounded-lg"
+                            />
+                            <img
+                                src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1766805525/cba-2_br0f9r.png"
+                                alt="Commbank Mortgage Insurance graphic"
+                                className="w-4/5 mx-auto mt-12 rounded-lg"
+                            />
+                            <img
+                                src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1755140435/cloud-eng-2_sauaoj.png"
+                                alt="Cloud deployment graphic"
+                                className="w-4/5 mx-auto mt-12 rounded-lg"
+                            />
                         </div>
                     </section>
 
